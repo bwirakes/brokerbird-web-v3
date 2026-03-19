@@ -111,7 +111,7 @@ export default function PainSection() {
               className="group relative"
             >
               <div 
-                className="h-full bg-white rounded-[2rem] p-8 flex flex-col items-start text-left shadow-[0_8px_30px_rgb(0,0,0,0.04)] group-hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 overflow-hidden relative"
+                className="h-full bg-white rounded-card p-8 flex flex-col items-start text-left shadow-soft group-hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 overflow-hidden relative"
                 style={{ borderTop: `4px solid ${point.theme.accent}` }}
               >
                 {/* Subtle Radial Gradient */}

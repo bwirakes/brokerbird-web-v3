@@ -152,7 +152,7 @@ export default function HowItWorks() {
               className="group relative"
             >
               <div 
-                className="h-full bg-white rounded-[2rem] p-8 sm:p-10 flex flex-col items-center text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] group-hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 min-h-[480px] overflow-hidden relative"
+                className="h-full bg-white rounded-card p-8 sm:p-10 flex flex-col items-center text-center shadow-soft group-hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 min-h-[480px] overflow-hidden relative"
                 style={{ borderTop: `4px solid ${step.theme.accent}` }}
               >
                 {/* Subtle Radial Gradient */}

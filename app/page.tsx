@@ -4,6 +4,7 @@ import LogoBar from "@/components/LogoBar";
 import PainSection from "@/components/PainSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import StatsSection from "@/components/StatsSection";
+import MidCTASection from "@/components/MidCTASection";
 import HowItWorks from "@/components/HowItWorks";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
@@ -20,6 +21,7 @@ export default function Home() {
         <PainSection />
         <FeaturesSection />
         <StatsSection />
+        <MidCTASection />
         <HowItWorks />
         <TestimonialsSection />
         <FAQSection />

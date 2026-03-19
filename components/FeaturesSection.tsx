@@ -10,19 +10,19 @@ export default function FeaturesSection() {
         
         {/* Header */}
         <motion.div
-          className="mb-24 lg:mb-32 max-w-3xl"
+          className="mb-24 lg:mb-32 max-w-3xl mx-auto text-center"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={viewport}
         >
-          <motion.p variants={fadeUp} className="text-sm font-semibold tracking-widest uppercase text-blue-600 mb-4">
+          <motion.p variants={fadeUp} className="overline mb-4">
             The Solution
           </motion.p>
           <motion.h2 variants={fadeUp} className="text-4xl sm:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
             From Analog Grind to <br className="hidden sm:block" /> Digital Workflow
           </motion.h2>
-          <motion.p variants={fadeUp} className="mt-6 text-xl text-slate-500 leading-relaxed">
+          <motion.p variants={fadeUp} className="mt-6 text-xl text-slate-500 leading-relaxed mx-auto">
             One platform that handles every step of the renewal cycle, transforming raw documents into strategic insights.
           </motion.p>
         </motion.div>
@@ -57,7 +57,7 @@ export default function FeaturesSection() {
               <motion.div 
                 animate={{ y: [-5, 5, -5] }} 
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                className="w-full max-w-md bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/50 p-6 opacity-95"
+                className="w-full max-w-md bg-white/95 backdrop-blur-sm rounded-card shadow-soft border border-white/50 border-t-[3px] border-t-orange-400 p-6 opacity-95 relative"
               >
                 <div className="flex items-center gap-2 mb-6">
                   <div className="w-3 h-3 rounded-full bg-red-400" />
@@ -108,7 +108,7 @@ export default function FeaturesSection() {
               <motion.div 
                 animate={{ y: [5, -5, 5] }} 
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-                className="w-full max-w-sm bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/50 p-6 flex flex-col gap-6"
+                className="w-full max-w-sm bg-white/95 backdrop-blur-sm rounded-card shadow-soft border border-white/50 border-t-[3px] border-t-teal-400 p-6 flex flex-col gap-6 relative"
               >
                 <div className="flex items-end gap-3 h-32 border-b border-slate-100 pb-2">
                   {[40, 70, 45, 90, 60, 85].map((h, i) => (
@@ -174,7 +174,7 @@ export default function FeaturesSection() {
                <motion.div 
                 animate={{ y: [-4, 6, -4] }} 
                 transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
-                className="w-full max-w-sm bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/50 p-6"
+                className="w-full max-w-sm bg-white/95 backdrop-blur-sm rounded-card shadow-soft border border-white/50 border-t-[3px] border-t-indigo-400 p-6 relative"
               >
                 <div className="flex justify-between items-center mb-6">
                   <div className="px-3 py-1 bg-slate-100 rounded-md text-[10px] font-bold text-slate-500 uppercase">Raw Upload</div>
@@ -215,7 +215,7 @@ export default function FeaturesSection() {
               <motion.div 
                 animate={{ y: [5, -5, 5] }} 
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-                className="w-full max-w-sm bg-white/10 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 p-6 flex flex-col gap-4 relative"
+                className="w-full max-w-sm bg-white/10 backdrop-blur-md rounded-card shadow-2xl border border-white/20 border-t-[3px] border-t-blue-400 p-6 flex flex-col gap-4 relative"
               >
                 <div className="flex justify-between items-center border-b border-white/10 pb-3 mb-2">
                    <div className="text-sm font-bold text-white">Extracted Output</div>
