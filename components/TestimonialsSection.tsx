@@ -9,7 +9,7 @@ const testimonials = [
       "The citation layer was the game-changer. I can show every client exactly where each data point came from. No more guesswork, no more 'trust us, the AI said so.'",
     name: "Sarah M.",
     role: "Head of Renewals",
-    company: "APAC Brokerage",
+    company: "Broker D",
     stars: 5,
   },
   {
@@ -17,7 +17,7 @@ const testimonials = [
       "We used to outsource our policy spreading. Now my team does the full renewal in-house in under 30 minutes. The business economics changed overnight.",
     name: "James R.",
     role: "Benefits Principal",
-    company: "US Brokerage",
+    company: "Broker E",
     stars: 5,
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
       "I don't know how we would go back to spreadsheets. BrokerBird gave our team their strategic advisor role back — the thing we actually enjoy doing.",
     name: "Amanda K.",
     role: "Director, Group Benefits",
-    company: "Hilb Group",
+    company: "Broker A",
     stars: 5,
   },
 ];

@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import { fadeUp, staggerContainer, viewport } from "@/lib/animations";
 
 const logos = [
-  "Hilb Group",
-  "Howden",
-  "Mercer",
-  "Newstate Stenhouse",
-  "Shea Insurance",
+  "Broker A",
+  "Broker B",
+  "Broker C",
+  "Broker D",
+  "Broker E",
 ];
 
 function LogoItem({ name }: { name: string }) {

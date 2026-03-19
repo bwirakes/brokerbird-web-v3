@@ -85,7 +85,7 @@ export default function HeroSection() {
             ))}
           </div>
           <span className="leading-tight text-left">
-            Trusted by benefits teams <br className="hidden sm:block"/> at Hilb, Howden &amp; Mercer
+            Trusted by leading teams <br className="hidden sm:block"/> at Broker A, Broker B &amp; Broker C
           </span>
         </motion.div>
       </motion.div>
