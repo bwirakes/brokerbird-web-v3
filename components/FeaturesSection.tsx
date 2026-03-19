@@ -254,9 +254,19 @@ export default function FeaturesSection() {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="overflow-hidden"
                       >
-                        <p className="text-lg text-slate-600 leading-relaxed pb-8 pr-12">
+                        <p className="text-lg text-slate-600 leading-relaxed pb-8 pr-0 lg:pr-12">
                           {feature.description}
                         </p>
+                        
+                        {/* Mobile graphic display */}
+                        <div className="block lg:hidden w-full aspect-square sm:aspect-[4/3] rounded-3xl overflow-hidden shadow-[inset_0_0_0_1px_rgba(0,0,0,0.05)] bg-slate-50 relative mb-8">
+                          <div className={`absolute inset-0 w-full h-full flex items-center justify-center p-8 bg-gradient-to-br ${feature.graphicBg}`}>
+                            {(() => {
+                              const Graphic = feature.Graphic;
+                              return <Graphic />;
+                            })()}
+                          </div>
+                        </div>
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -265,8 +275,8 @@ export default function FeaturesSection() {
             })}
           </div>
 
-          {/* Right Column: Dynamic Graphic Window */}
-          <div className="w-full aspect-[4/3] sm:aspect-square lg:aspect-auto lg:h-full rounded-3xl overflow-hidden shadow-[inset_0_0_0_1px_rgba(0,0,0,0.05)] bg-slate-50 relative">
+          {/* Right Column: Dynamic Graphic Window (Desktop only) */}
+          <div className="hidden lg:block w-full lg:h-full rounded-3xl overflow-hidden shadow-[inset_0_0_0_1px_rgba(0,0,0,0.05)] bg-slate-50 relative">
             <AnimatePresence mode="popLayout">
               {featuresData.map((feature, idx) => {
                 if (activeFeature !== idx) return null;
