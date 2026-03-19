@@ -198,7 +198,7 @@ export default function FeaturesSection() {
 
         {/* Dropbox Sign-style Accordion Layout */}
         <motion.div 
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-stretch"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -266,7 +266,7 @@ export default function FeaturesSection() {
           </div>
 
           {/* Right Column: Dynamic Graphic Window */}
-          <div className="sticky top-32 w-full aspect-[4/3] sm:aspect-square lg:aspect-[4/3] rounded-3xl overflow-hidden shadow-[inset_0_0_0_1px_rgba(0,0,0,0.05)] bg-slate-50 relative">
+          <div className="w-full aspect-[4/3] sm:aspect-square lg:aspect-auto lg:h-full rounded-3xl overflow-hidden shadow-[inset_0_0_0_1px_rgba(0,0,0,0.05)] bg-slate-50 relative">
             <AnimatePresence mode="popLayout">
               {featuresData.map((feature, idx) => {
                 if (activeFeature !== idx) return null;
