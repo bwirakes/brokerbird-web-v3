@@ -18,10 +18,13 @@ export default function CTASection() {
         </motion.p>
         <motion.h2
           variants={fadeUp}
-          className="text-4xl sm:text-5xl font-bold text-white leading-tight tracking-tight mb-6"
+          className="text-4xl sm:text-5xl font-bold text-white leading-[1.1] tracking-tight mb-6"
         >
-          Stop Settling for a Workflow That Is{" "}
-          <span className="text-blue-400">Breaking Your Team.</span>
+          Stop Settling for a Workflow
+          <br className="hidden sm:block" />
+          <span className="text-slate-400 font-medium tracking-normal">
+            That Is Breaking Your Team.
+          </span>
         </motion.h2>
         <motion.p
           variants={fadeUp}
