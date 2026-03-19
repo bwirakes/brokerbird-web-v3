@@ -77,29 +77,46 @@ const CompareUI = () => (
 
 const steps = [
   {
-    title: "Connect your documents",
+    title: "Connect documents",
     body: "Drop in any PDF or HR census file. Integrations built-in.",
-    ui: <UploadUI />
+    ui: <UploadUI />,
+    theme: {
+      accent: "#3B82F6", // blue-500
+      bg: "bg-blue-50",
+      text: "text-blue-700",
+      radial: "from-blue-50/40"
+    }
   },
   {
     title: "AI gets to work",
     body: "BrokerBird extracts complex fields with inline citations instantly.",
-    ui: <ExtractUI />
+    ui: <ExtractUI />,
+    theme: {
+      accent: "#6366F1", // indigo-500
+      bg: "bg-indigo-50",
+      text: "text-indigo-700",
+      radial: "from-indigo-50/40"
+    }
   },
   {
-    title: "Compare and present",
+    title: "Compare & present",
     body: "What used to take 40 hours is now a perfect 30-minute side-by-side.",
-    ui: <CompareUI />
+    ui: <CompareUI />,
+    theme: {
+      accent: "#F59E0B", // amber-500
+      bg: "bg-amber-50",
+      text: "text-amber-700",
+      radial: "from-amber-50/40"
+    }
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-slate-50 py-32 sm:py-48 px-6">
+    <section id="how-it-works" className="bg-white py-32 sm:py-48 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Conway-style Header (Left aligned or centered, let's keep it centered to match current flow, but make it bolder) */}
         <motion.div
-          className="text-center md:text-left mb-16"
+          className="text-center md:text-left mb-20"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -120,23 +137,38 @@ export default function HowItWorks() {
           </motion.h2>
         </motion.div>
 
-        {/* Conway-style Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={viewport}
         >
           {steps.map((step, i) => (
-            <motion.div key={i} variants={cardReveal} className="h-full flex justify-center">
-              <div className="bg-white w-full max-w-[420px] aspect-square rounded-full border border-slate-100 p-10 sm:p-16 flex flex-col shadow-[0_8px_40px_rgb(0,0,0,0.03)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.05)] transition-all relative">
-                <div className="flex flex-col items-center justify-center text-center h-1/3 mb-6">
-                  <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">{step.title}</h3>
-                  <p className="text-sm sm:text-base text-slate-500 leading-relaxed max-w-[280px]">{step.body}</p>
-                </div>
-                <div className="flex-grow flex items-center justify-center overflow-hidden">
-                  {step.ui}
+            <motion.div 
+              key={i} 
+              variants={cardReveal} 
+              whileHover={{ y: -8 }}
+              className="group relative"
+            >
+              <div 
+                className="h-full bg-white rounded-[2rem] p-8 sm:p-10 flex flex-col items-center text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] group-hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 min-h-[480px] overflow-hidden relative"
+                style={{ borderTop: `4px solid ${step.theme.accent}` }}
+              >
+                {/* Subtle Radial Gradient */}
+                <div className={`absolute top-0 left-0 w-48 h-48 bg-gradient-radial ${step.theme.radial} to-transparent opacity-50 group-hover:opacity-80 transition-opacity pointer-events-none`} />
+
+                <div className="relative z-10 w-full flex flex-col h-full">
+                  <div className="mb-8">
+                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 tracking-tight">{step.title}</h3>
+                    <p className="text-sm text-slate-500 leading-relaxed max-w-[280px] mx-auto">{step.body}</p>
+                  </div>
+                  <motion.div 
+                    whileHover={{ scale: 1.02 }}
+                    className="flex-grow flex items-center justify-center overflow-hidden transition-transform"
+                  >
+                    {step.ui}
+                  </motion.div>
                 </div>
               </div>
             </motion.div>
