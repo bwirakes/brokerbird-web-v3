@@ -111,7 +111,7 @@ export default function PainSection() {
               className="group relative"
             >
               <div 
-                className="h-full bg-white rounded-[2.5rem] p-10 flex flex-col items-start text-left shadow-[0_8px_30px_rgb(0,0,0,0.04)] group-hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 overflow-hidden relative"
+                className="h-full bg-white rounded-[2rem] p-8 flex flex-col items-start text-left shadow-[0_8px_30px_rgb(0,0,0,0.04)] group-hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 overflow-hidden relative"
                 style={{ borderTop: `4px solid ${point.theme.accent}` }}
               >
                 {/* Subtle Radial Gradient */}
@@ -120,21 +120,21 @@ export default function PainSection() {
                 <div className="relative z-10 w-full flex flex-col h-full">
                   <motion.div 
                     whileHover={{ scale: 1.1 }}
-                    className={`w-14 h-14 rounded-2xl ${point.theme.bg} flex items-center justify-center ${point.theme.text} mb-10 shadow-sm border border-slate-100 transition-transform`}
+                    className={`w-12 h-12 rounded-xl ${point.theme.bg} flex items-center justify-center ${point.theme.text} mb-6 shadow-sm border border-slate-100 transition-transform`}
                   >
                     {point.icon}
                   </motion.div>
                   
-                  <h3 className="text-2xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
+                  <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight leading-tight">
                     {point.title}
                   </h3>
                   
-                  <p className="text-base text-slate-700 leading-relaxed mb-10 flex-grow">
+                  <p className="text-sm text-slate-700 leading-relaxed mb-6 flex-grow">
                     {point.body}
                   </p>
                   
-                  <div className="pt-8 border-t border-slate-100 w-full">
-                    <Badge className={`${point.theme.bg} ${point.theme.text} hover:${point.theme.bg} border-none text-[11px] font-bold uppercase tracking-widest px-4 py-2 rounded-xl`}>
+                  <div className="pt-6 border-t border-slate-100 w-full">
+                    <Badge className={`${point.theme.bg} ${point.theme.text} hover:${point.theme.bg} border-none text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg`}>
                       {point.stat}
                     </Badge>
                   </div>

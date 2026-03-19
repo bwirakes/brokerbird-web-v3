@@ -46,9 +46,9 @@ export default function HeroSection() {
         {/* Subheadline */}
         <motion.p
           variants={fadeUp}
-          className="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed mb-12"
+          className="mt-8 text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed"
         >
-          BrokerBird turns your <strong>40-hour</strong> renewal grind into a <strong>30-minute</strong> workflow — with <strong>97% extraction accuracy</strong>, backed by an <strong>inline citation</strong> for every single field.
+          BrokerBird turns your <strong>40-hour "employee benefit renewal" grind</strong> into a <strong>30-minute</strong> workflow — with <strong>97% extraction accuracy</strong>, backed by an <strong>inline citation</strong> for every single field.
         </motion.p>
 
         {/* CTA Buttons */}
