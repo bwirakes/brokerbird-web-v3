@@ -6,7 +6,6 @@ import { fadeUp, staggerContainer, cardReveal, viewport } from "@/lib/animations
 /* ── Step 1: Census ── */
 const CensusUI = () => (
   <div className="w-full h-full flex flex-col items-center justify-center p-6 sm:p-8 relative group">
-    <div className="absolute inset-4 bg-slate-50 rounded-2xl border-2 border-dashed border-slate-200 opacity-50 transition-all group-hover:bg-white group-hover:opacity-100" />
     <motion.div 
       animate={{ y: [0, -6, 0] }} 
       transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
@@ -36,7 +35,7 @@ const CensusUI = () => (
 
 /* ── Step 2: Renewals ── */
 const RenewalsUI = () => (
-  <div className="w-full h-full bg-slate-50/40 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-center gap-3 transition-all">
+  <div className="w-full h-full p-6 sm:p-8 flex flex-col justify-center gap-3">
     <div className="flex items-center gap-2 mb-2">
       <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
       <div className="text-xs font-semibold text-blue-600">Extracting 50+ fields...</div>
@@ -61,7 +60,7 @@ const RenewalsUI = () => (
 
 /* ── Step 3: Plan Design ── */
 const PlanDesignUI = () => (
-  <div className="w-full h-full bg-slate-50/40 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-center relative transition-all">
+  <div className="w-full h-full p-6 sm:p-8 flex flex-col justify-center relative">
     <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-5 mb-3">
       <div className="flex items-center gap-2 mb-4">
         <div className="w-7 h-7 rounded bg-indigo-100 flex items-center justify-center">
@@ -86,7 +85,7 @@ const PlanDesignUI = () => (
 
 /* ── Step 4: Claims ── */
 const ClaimsUI = () => (
-  <div className="w-full h-full bg-slate-50/40 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-center relative transition-all">
+  <div className="w-full h-full p-6 sm:p-8 flex flex-col justify-center relative">
     <div className="flex items-center gap-2 mb-4">
       <div className="w-2 h-2 rounded-full bg-green-500" />
       <div className="text-xs font-semibold text-green-700">Audit Trail Verified</div>
