@@ -6,9 +6,9 @@ import { fadeUp, staggerContainer, cardReveal, viewport } from "@/lib/animations
 
 const painPoints = [
   {
-    title: "The 40-Hour Grind",
-    body: "Manual policy spreading steals your team's most productive weeks. Senior brokers become copy-paste operators while renewal deadlines pile up.",
-    stat: "40 hrs per renewal",
+    title: "The Talent Crisis",
+    body: "Properly training a junior broker takes two to four full years. Instead of strategic thinking, their most productive weeks are stolen by manual policy spreading and data entry.",
+    stat: "2-4 years to train",
     theme: {
       accent: "#3B82F6", // blue-500
       bg: "bg-blue-50",
@@ -23,8 +23,8 @@ const painPoints = [
   },
   {
     title: "The E&O Nightmare",
-    body: "Every manual keystroke is a transcription risk. One error in a 200-page PDF becomes a multi-million dollar claim exposure.",
-    stat: "High Risk Error",
+    body: "Every manual keystroke is a transcription risk. One error in a 200-page PDF becomes a multi-million dollar claim exposure. Mitigating catastrophic E&O risk is non-negotiable.",
+    stat: "Catastrophic Risk",
     theme: {
       accent: "#EF4444", // red-500
       bg: "bg-red-50",
@@ -38,9 +38,9 @@ const painPoints = [
     )
   },
   {
-    title: "Format Chaos",
-    body: "Unstructured HR census dumps and inconsistent carrier PDFs make true like-for-like comparison nearly impossible for your team.",
-    stat: "Inconsistent Data",
+    title: "Lifecycle Bottleneck",
+    body: "From initial prospecting all the way through post-enrollment support, unstructured HR dumps and rigid formats slow your team to a crawl.",
+    stat: "Process Paralysis",
     theme: {
       accent: "#6366F1", // indigo-500
       bg: "bg-indigo-50",
@@ -54,9 +54,9 @@ const painPoints = [
     )
   },
   {
-    title: "Margin Compression",
-    body: "Rising talent costs and shrinking commissions create a hard ceiling on your firm's ability to scale or grow profitably.",
-    stat: "18 weeks lost/year",
+    title: "The Margin Crisis",
+    body: "Severe margin compression is suffocating agency principals. With enterprise commissions dropping from 10% to <2%, offsetting these shaky economics mathematically is your only option.",
+    stat: "<2% Commissions",
     theme: {
       accent: "#F59E0B", // amber-500
       bg: "bg-amber-50",
@@ -68,7 +68,7 @@ const painPoints = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
       </svg>
     )
-  },
+  }
 ];
 
 export default function PainSection() {

@@ -19,9 +19,10 @@ export default function HeroSection() {
         {/* Headline */}
         <motion.h1
           variants={fadeUp}
-          className="text-5xl sm:text-6xl lg:text-[80px] font-bold text-slate-900 leading-[1.05] tracking-tight mb-10"
+          className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.08] tracking-tight mb-6"
         >
-          Your Team Is{" "}
+          From Census to Claims.
+          <br />
           <span
             className="relative inline-block"
             style={{
@@ -29,26 +30,22 @@ export default function HeroSection() {
               color: "#2563EB",
             }}
           >
-            Wasting Days
-          </span>{" "}
-          Reading Policies.
-          <br className="hidden sm:block" />
-          <motion.span 
-            className="text-slate-400 block mt-4 text-4xl sm:text-5xl lg:text-6xl"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-          >
-            There Is a Better Way.
-          </motion.span>
+            One Intelligent Platform.
+          </span>
         </motion.h1>
+        <motion.p
+          variants={fadeUp}
+          className="text-2xl sm:text-3xl lg:text-4xl text-slate-400 font-medium tracking-tight mb-10"
+        >
+          The Thinking Partner for Benefits Brokers.
+        </motion.p>
 
         {/* Subheadline */}
         <motion.p
           variants={fadeUp}
-          className="mt-8 text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed"
+          className="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed"
         >
-          BrokerBird turns your <strong>40-hour "employee benefit renewal" grind</strong> into a <strong>30-minute</strong> workflow — with <strong>97% extraction accuracy</strong>, backed by an <strong>inline citation</strong> for every single field.
+          BrokerBird is your <strong>end-to-end intelligent thinking partner</strong> — from census reconciliation to claims advocacy — recovering <strong>18 weeks of broker capacity</strong> annually with verifiable, <strong>inline citations</strong>.
         </motion.p>
 
         {/* CTA Buttons */}
