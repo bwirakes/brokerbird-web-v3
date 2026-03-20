@@ -185,9 +185,9 @@ export default function FeaturesSection() {
             The Solution
           </motion.p>
           <motion.h2 variants={fadeUp} className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
-            From Analog Grind to
+            From Analog Grind to{" "}
             <br className="hidden sm:block" />
-            <span className="text-slate-400 font-medium tracking-normal">
+            <span className="text-slate-400 font-medium tracking-normal block sm:inline">
               Digital Workflow
             </span>
           </motion.h2>
