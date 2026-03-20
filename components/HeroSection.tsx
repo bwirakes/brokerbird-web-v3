@@ -49,7 +49,7 @@ export default function HeroSection() {
         </motion.p>
 
         {/* CTA Buttons */}
-        <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 mb-16">
           <a
             href="#how-it-works"
             id="hero-watch-demo"
