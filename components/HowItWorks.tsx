@@ -168,9 +168,9 @@ export default function HowItWorks() {
             variants={fadeUp}
             className="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight leading-tight"
           >
-            Four modules. One end-to-end platform.
+            Four modules. One end-to-end platform.{" "}
             <br className="hidden sm:block" />
-            <span className="text-slate-400 font-medium">
+            <span className="text-slate-400 font-medium block sm:inline">
               From intake to advocacy.
             </span>
           </motion.h2>
