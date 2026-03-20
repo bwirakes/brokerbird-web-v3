@@ -89,9 +89,9 @@ export default function PainSection() {
             variants={fadeUp}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight mb-8"
           >
-            Your Best People Are
+            Your Best People Are{" "}
             <br className="hidden sm:block" />
-            <span className="text-slate-400 font-medium tracking-normal">
+            <span className="text-slate-400 font-medium tracking-normal block sm:inline">
               Doing Data Entry
             </span>
           </motion.h2>

@@ -109,9 +109,9 @@ const steps = [
     title: "Reconcile census",
     body: "Drop in messy HR dumps. BrokerBird normalizes, validates, and maps to carrier-ready format instantly.",
     ui: <CensusUI />,
+    graphicBg: "from-emerald-50 via-teal-50 to-cyan-100",
     theme: {
       accent: "#14B8A6",
-      bg: "bg-teal-50",
       text: "text-teal-700",
       pill: "bg-teal-100 text-teal-800",
     }
@@ -120,9 +120,9 @@ const steps = [
     title: "Extract & compare renewals",
     body: "AI extracts 50+ elements from any carrier PDF with inline citations — and flags suspiciously cheap quotes.",
     ui: <RenewalsUI />,
+    graphicBg: "from-amber-100 via-orange-50 to-rose-100",
     theme: {
       accent: "#3B82F6",
-      bg: "bg-blue-50",
       text: "text-blue-700",
       pill: "bg-blue-100 text-blue-800",
     }
@@ -131,9 +131,9 @@ const steps = [
     title: "Design & present plans",
     body: "Generate print-ready, branded PowerPoint presentations. No more spreadsheet outsourcing.",
     ui: <PlanDesignUI />,
+    graphicBg: "from-indigo-50 via-blue-50 to-violet-100",
     theme: {
       accent: "#6366F1",
-      bg: "bg-indigo-50",
       text: "text-indigo-700",
       pill: "bg-indigo-100 text-indigo-800",
     }
@@ -142,9 +142,9 @@ const steps = [
     title: "Advocate on claims",
     body: "Build verifiable audit trails with loss ratios and top diagnoses to win complex claims against unresponsive TPAs.",
     ui: <ClaimsUI />,
+    graphicBg: "from-amber-50 via-yellow-50 to-orange-100",
     theme: {
       accent: "#F59E0B",
-      bg: "bg-amber-50",
       text: "text-amber-700",
       pill: "bg-amber-100 text-amber-800",
     }
@@ -192,7 +192,6 @@ export default function HowItWorks() {
               >
                 <div
                   className={`grid grid-cols-1 lg:grid-cols-2 gap-0 bg-white rounded-card shadow-soft overflow-hidden group-hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500`}
-                  style={{ borderLeft: isReversed ? 'none' : `4px solid ${step.theme.accent}`, borderRight: isReversed ? `4px solid ${step.theme.accent}` : 'none' }}
                 >
                   {/* Text side */}
                   <div className={`flex flex-col justify-center p-8 sm:p-12 lg:p-16 ${isReversed ? 'lg:order-2' : 'lg:order-1'}`}>
@@ -208,7 +207,7 @@ export default function HowItWorks() {
                   </div>
 
                   {/* UI Graphic side */}
-                  <div className={`relative min-h-[280px] sm:min-h-[320px] ${step.theme.bg} ${isReversed ? 'lg:order-1' : 'lg:order-2'}`}>
+                  <div className={`relative min-h-[280px] sm:min-h-[320px] bg-gradient-to-br ${step.graphicBg} ${isReversed ? 'lg:order-1' : 'lg:order-2'}`}>
                     <div className="absolute inset-0 flex items-center justify-center p-6 sm:p-10">
                       <div className="w-full max-w-sm">
                         {step.ui}
