@@ -190,7 +190,7 @@ export default function HowItWorks() {
                 className="group"
               >
                 <div
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-0 bg-white rounded-card shadow-soft overflow-hidden group-hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500`}
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-0 bg-white rounded-3xl shadow-soft overflow-hidden group-hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500`}
                 >
                   {/* Text side */}
                   <div className={`flex flex-col justify-center p-8 sm:p-12 lg:p-16 ${isReversed ? 'lg:order-2' : 'lg:order-1'}`}>
