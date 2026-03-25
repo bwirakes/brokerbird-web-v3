@@ -26,10 +26,13 @@ export default function Footer() {
           <div>
             <h4 className="text-xs font-medium uppercase tracking-widest text-slate-500 mb-4">Product</h4>
             <ul className="space-y-2">
+              <li>
+                <a href="/pricing" className="text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">Pricing</a>
+              </li>
               {["Features", "How It Works", "Testimonials", "FAQ"].map((item) => (
                 <li key={item}>
                   <a
-                    href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    href={`/#${item.toLowerCase().replace(/\s+/g, "-")}`}
                     className="text-sm text-slate-400 hover:text-white transition-colors"
                   >
                     {item}
