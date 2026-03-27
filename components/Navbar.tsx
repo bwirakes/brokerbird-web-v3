@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { buttonVariants } from "@/components/ui/button";
 
@@ -26,12 +27,13 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2" aria-label="BrokerBird home">
-          <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 2C5.2 2 3 4.2 3 7c0 1.8.9 3.4 2.3 4.3L4 14h8l-1.3-2.7C12.1 10.4 13 8.8 13 7c0-2.8-2.2-5-5-5z" fill="white"/>
-              <circle cx="6.5" cy="6.5" r="1" fill="#2563EB"/>
-            </svg>
-          </div>
+          <Image
+            src="/brokerbird-mascot.svg"
+            alt="BrokerBird Logo"
+            width={28}
+            height={28}
+            className="flex-shrink-0"
+          />
           <span className="text-[15px] font-semibold text-slate-900 tracking-tight">BrokerBird</span>
         </a>
 
