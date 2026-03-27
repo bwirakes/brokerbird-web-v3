@@ -59,9 +59,9 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="#contact"
-          className={`hidden md:inline-flex ${buttonVariants({ variant: 'default', size: 'sm' })}`}
+          className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-all duration-200 hover:-translate-y-[1px] hover:shadow-lg"
         >
-          Request Access
+          Request Access <span aria-hidden="true">→</span>
         </a>
       </nav>
     </header>

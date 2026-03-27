@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <g>
+    <!-- Legs -->
+    <path d="M40 85 l0 10 M35 95 l10 0" stroke="#1e293b" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M60 85 l0 10 M55 95 l10 0" stroke="#1e293b" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Body Profile -->
+    <circle cx="50" cy="50" r="36" fill="#60a5fa" stroke="#1e293b" stroke-width="3"/>
+    <!-- White Belly -->
+    <path d="M 23 58 Q 50 92 77 58 Q 50 40 23 58" fill="#f8fafc" stroke="#1e293b" stroke-width="3"/>
+    <!-- Eyes -->
+    <circle cx="36" cy="40" r="5.5" fill="#1e293b"/>
+    <circle cx="64" cy="40" r="5.5" fill="#1e293b"/>
+    <!-- Highlights -->
+    <circle cx="38" cy="38" r="1.5" fill="#ffffff"/>
+    <circle cx="66" cy="38" r="1.5" fill="#ffffff"/>
+    <!-- Yellow Beak -->
+    <polygon points="46,46 54,46 50,53" fill="#fbbf24" stroke="#1e293b" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Flat Tail -->
+    <path d="M 12 55 Q -5 45 12 35 Z" fill="#60a5fa" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" transform="translate(141, 15) scale(-1, 1)" />
+    <!-- Flapping Wings -->
+    <!-- Left Wing (holding document) -->
+    <path d="M 16 45 Q 2 60 16 75 Z" fill="#3b82f6" stroke="#1e293b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Tiny Clipboard / Document Prop -->
+    <rect x="2" y="55" width="22" height="26" rx="2" fill="#ffffff" stroke="#1e293b" stroke-width="2.5"/>
+    <rect x="9" y="52" width="8" height="3" rx="1.5" fill="#1e293b"/>
+    <line x1="6" y1="62" x2="20" y2="62" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="6" y1="68" x2="20" y2="68" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="6" y1="74" x2="14" y2="74" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
