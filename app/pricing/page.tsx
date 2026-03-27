@@ -5,9 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PricingHero from "@/components/pricing/PricingHero";
 import PricingCards from "@/components/pricing/PricingCards";
-import AddOnsGrid from "@/components/pricing/AddOnsGrid";
 import WhoIsThisFor from "@/components/pricing/WhoIsThisFor";
-import AICreditsSection from "@/components/pricing/AICreditsSection";
+import PricingPhilosophy from "@/components/pricing/PricingPhilosophy";
 import FeatureComparison from "@/components/pricing/FeatureComparison";
 import PricingFAQ from "@/components/pricing/PricingFAQ";
 
@@ -30,11 +29,9 @@ export default function PricingPage() {
         
         <WhoIsThisFor />
         
+        <PricingPhilosophy />
+        
         <FeatureComparison />
-        
-        <AddOnsGrid />
-        
-        <AICreditsSection />
         
         <PricingFAQ />
       </div>

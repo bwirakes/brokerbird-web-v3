@@ -6,7 +6,7 @@ import { fadeUp, staggerContainer, viewport } from "@/lib/animations";
 const stats = [
   { value: "30", unit: "min", label: "Full renewal cycle", sub: "Was 40 hours" },
   { value: "97", unit: "%", label: "Extraction accuracy", sub: "Evidence Layer verified" },
-  { value: "18", unit: "wks", label: "Reclaimed per broker", sub: "Per year" },
+  { value: "30", unit: "wks", label: "Reclaimed per broker", sub: "Per year" },
 ];
 
 export default function StatsSection() {

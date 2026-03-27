@@ -17,7 +17,7 @@ export default function MidCTASection() {
             variants={fadeUp}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight leading-tight"
           >
-            Ready to reclaim <span className="text-blue-400">18 weeks</span> per year?
+            Ready to reclaim <span className="text-blue-400">30 weeks</span> per year?
           </motion.h2>
           <motion.p 
             variants={fadeUp}

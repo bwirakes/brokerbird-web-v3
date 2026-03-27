@@ -70,8 +70,8 @@ export default function PricingCards({ billingCycle }: PricingCardsProps) {
                       <span className="text-slate-900 font-semibold sm:text-right">{plan.metrics.seats}</span>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4 text-sm">
-                      <span className="text-slate-500 shrink-0 font-medium">AI Credits</span>
-                      <span className="text-slate-900 font-semibold sm:text-right">{plan.metrics.aiCredits}</span>
+                      <span className="text-slate-500 shrink-0 font-medium">Est. Proposals</span>
+                      <span className="text-slate-900 font-semibold sm:text-right">{plan.metrics.proposals}</span>
                     </div>
                   </div>
                 </CardHeader>
@@ -98,15 +98,15 @@ export default function PricingCards({ billingCycle }: PricingCardsProps) {
                     <div className="flex gap-3 items-start">
                       <Plus className="w-4 h-4 text-slate-400 mt-0.5 shrink-0" />
                       <div>
-                        <span className="text-sm text-slate-700 font-medium block leading-snug">Extra Credits</span>
-                        <span className="text-xs text-slate-500">{plan.extensions.additionalCredits}</span>
+                        <span className="text-sm text-slate-700 font-medium block leading-snug">Capacity Overages</span>
+                        <span className="text-xs text-slate-500">{plan.extensions.capacityOverages}</span>
                       </div>
                     </div>
                     <div className="flex gap-3 items-start">
                       <Plus className="w-4 h-4 text-slate-400 mt-0.5 shrink-0" />
                       <div>
-                        <span className="text-sm text-slate-700 font-medium block leading-snug">Extra Modules</span>
-                        <span className="text-xs text-slate-500">{plan.extensions.addons}</span>
+                        <span className="text-sm text-slate-700 font-medium block leading-snug">Setup Fees</span>
+                        <span className="text-xs text-slate-500">{plan.extensions.setupFees}</span>
                       </div>
                     </div>
                   </div>
